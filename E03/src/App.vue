@@ -1,47 +1,30 @@
 <script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
+import DirectivaIfShow from './components/DirectivaIfShow.vue';
+import DirectivaFor from './components/DirectivaFor.vue';
+import DirectivaBind from './components/DirectivaBind.vue';
+import DirectivaOn from './components/DirectivaOn.vue';
 </script>
 
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
+    <h1>USANDO DIRECTIVAS</h1>
 
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-    </div>
-  </header>
+    <h2>Directiva IF - SHOW</h2>
+    <DirectivaIfShow />
 
-  <main>
-    <TheWelcome />
-  </main>
+    <hr>
+
+    <h2>Directiva FOR</h2>
+    <DirectivaFor />
+
+    <hr>
+
+    <h2>Directiva BIND</h2>
+    <DirectivaBind />
+
+    <hr>
+
+    <h2>Directiva ON</h2>
+    <DirectivaOn />
 </template>
 
-<style scoped>
-header {
-  line-height: 1.5;
-}
-
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
-
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-}
-</style>
+<style scoped></style>

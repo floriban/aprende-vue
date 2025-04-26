@@ -4,10 +4,12 @@ import Counter from './components/Counter.vue'
 </script>
 
 <template>
-  <h1>Contador:</h1>
+  <h1>USANDO COMPONENTES</h1>
+
+  <h2>Contador:</h2>
   <Counter />
 
-  <h1>Listado de posts:</h1>
+  <h2>Listado de posts:</h2>
   <PostContainer />
 </template>
 
